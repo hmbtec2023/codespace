@@ -1,1 +1,59 @@
-hallo hmb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #banner {
+            position: relative;
+            max-width: 100%;
+        }
+
+        #centralImage {
+            display: block;
+            margin: 0 auto; /* Zentrieren des Bildes */
+            max-width: 100%;
+            height: auto;
+        }
+
+        .imageButton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Anpassen der Breite nach Bedarf */
+            height: auto;
+            cursor: pointer;
+        }
+
+        #leftButton {
+            left: 10px;
+        }
+
+        #rightButton {
+            right: 10px;
+        }
+    </style>
+    <title>Banner mit Buttons</title>
+</head>
+<body>
+    <div id="banner">
+        <!-- Zentrales Bild -->
+        <img id="centralImage" src="zentrales-bild.jpg" alt="Zentrales Bild">
+
+        <!-- Linke Schaltfläche -->
+        <img id="leftButton" class="imageButton" src="left-button.png" alt="Linke Schaltfläche">
+
+        <!-- Rechte Schaltfläche -->
+        <img id="rightButton" class="imageButton" src="right-button.png" alt="Rechte Schaltfläche">
+    </div>
+</body>
+</html>
